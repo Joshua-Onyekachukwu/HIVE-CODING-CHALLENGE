@@ -7,9 +7,8 @@ def game_of_life(board):
     next_board = [[0 for _ in range(cols)] for _ in range(rows)]
 
     # Define the 8 possible neighbor directions
-    directions = [(-1, -1), (-1, 0), (-1, 1),
-                  (0, -1), (0, 1),
-                  (1, -1), (1, 0), (1, 1)]
+    directions = [(-1, -1), (-1, 0), (-1, 1),  (0, -1),
+                  (0, 1),   (1, -1), (1, 0),   (1, 1)]
 
     # Iterate through each cell in the board
     for i in range(rows):
@@ -40,6 +39,7 @@ board = [
     [0, 0, 1],
     [1, 1, 1]
 ]
+
 
 next_generation = game_of_life(board)
 for row in next_generation:

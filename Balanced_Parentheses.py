@@ -1,6 +1,8 @@
 def is_balanced(bracket_string):
     # Define a mapping of closing brackets to their corresponding opening brackets
-    bracket_pairs = {')': '(', '}': '{', ']': '['}
+    bracket_pairs = {')': '(',
+                     '}': '{',
+                     ']': '['}
 
     # Initialize an empty stack
     stack = []

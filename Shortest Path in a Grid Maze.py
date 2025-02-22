@@ -1,3 +1,5 @@
+# import the deque class from Python's collections module. double-ended queue
+
 from collections import deque
 
 
@@ -49,4 +51,15 @@ grid = [
     [0, 1, 1, 0]
 ]
 
+
+grid2 =[
+    [0, 0, 1, 0],
+    [0, 0, 0, 1],
+    [1, 0, 1, 0],
+    [0, 0, 1, 0]
+
+]
+
 print(shortest_path(grid))  # Output: 6
+
+print(shortest_path(grid2))
